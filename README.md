@@ -12,10 +12,9 @@ The onyl statistcial models currently built on this data was by Roald Eiselen (U
 - Conditional Random Fields [w-3] (F1=**76.83**) 
 
 ### Neural Network 
-- BiLSTM-CRF (F1=**70.69**)
 - BiLSTM-CRF (FastText Wiki 300D) (F1=**61.6**)
-- BiLSTM-CRF (6B + Glove 100D) (F1=**82.4**)
-- BiLSTM-CRF (Casing Features + 6B Glove 50D) (F1=**85.7**)
+- BiLSTM-CRF (FastText Wiki 300D + Gove 6B) (F1=**70.4**)
+- BiLSTM-CRF (Casing Features + FastText Wiki 300D + Gove 6B) (F1=**85.7**)
 
 ### Results
 We managed to attain the same results (if not better) using a Conditional Random Field approach and add more *engineered features* than the orginal paper by Roald Eiselen. 
