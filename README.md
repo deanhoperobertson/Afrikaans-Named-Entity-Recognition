@@ -2,7 +2,7 @@
 
 This repository explores different techiques used for Named Entity Recognition (NER) on the NCHLT Afrikaans Named Entity Annotated Corpus. The data can be found here: https://repo.sadilar.org/handle/20.500.12185/299 and was curated by the South African Department of Science and Innnovation.
 
-The onyl statistcial models currently built on this data was by Roald Eiselen (Univerity of Potchefstroom). Reults can be found here:https://www.aclweb.org/anthology/L16-1533.pdf attaining an average F1 score of 75.86 with the hightest score achievied of 77.  
+The onyl statistcial models currently built on this data was by Roald Eiselen (Univerity of Potchefstroom). Reults can be found here:https://www.aclweb.org/anthology/L16-1533.pdf attaining an average F1 score of **75.86** with the hightest score achievied of **77**.
 
 ## Models
 ### Feature Engineered
