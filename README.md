@@ -17,5 +17,7 @@ The onyl statistcial models currently built on this data was by Roald Eiselen (U
 - BiLSTM-CRF (6B + Glove 100D) (F1=**82.4**)
 - BiLSTM-CRF (Casing Features + 6B Glove 50D) (F1=**85.7**)
 
-###
-Error Analysis: Afrikaans word embedding used in the BiLSTM-CRF is missing 39% of the words use in the NCHLT Afrikaans NER Corpus. 
+### Results
+We managed to attain the same results (if not better) using a Conditional Random Field approach and add more engineered features than the orginal paper by Roald Eiselen. 
+
+*Error Analysis*: Afrikaans word embedding used in the BiLSTM-CRF is missing 39% of the words use in the NCHLT Afrikaans NER Corpus. 
