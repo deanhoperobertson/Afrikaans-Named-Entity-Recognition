@@ -13,10 +13,11 @@ The onyl statistcial models currently built on this data was by Roald Eiselen (U
 
 ### Neural Network 
 - BiLSTM-CRF (FastText Wiki 300D 99k) (F1=**61.6**)
-- BiLSTM-CRF (FastText Wiki 300D 800k) (F1=**70.4**)
-- BiLSTM-CRF (Casing Features + FastText Wiki 300D 800k) (F1=**85.7**)
+- BiLSTM-CRF (Casing Features + FastText Wiki 300D 800k) (F1=**??**)
 
 ### Results
 We managed to attain the same results (if not better) using a Conditional Random Field approach and add more *engineered features* than the orginal paper by Roald Eiselen. 
 
-*Error Analysis*: Afrikaans word embedding used in the BiLSTM-CRF is missing 33%-39% of the words use in the NCHLT Afrikaans NER Corpus.
+*Error Analysis*: Afrikaans word embedding used in the BiLSTM-CRF is missing 33%-39% of the words use in the NCHLT Afrikaans NER Corpus. I used the FastText Afrikaans pre-trained word embeddings trained on Wikipedia found at:
+https://fasttext.cc/docs/en/pretrained-vectors.html 
+
