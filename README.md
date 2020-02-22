@@ -15,10 +15,12 @@ The onyl statistcial models currently built on this data was by Roald Eiselen (U
 - BiLSTM-CRF (FastText Wiki 300D 99k) (F1=**64.0**)
 - BiLSTM-CRF (Casing Features + FastText Wiki 300D 800k) (F1=**??**)
 
+### Word Embeddings:
+I used the FastText Afrikaans pre-trained word embeddings trained on Wikipedia found at:
+https://fasttext.cc/docs/en/pretrained-vectors.html.
+
 ### Results
 We managed to attain the same results (if not better) using a Conditional Random Field approach and add more *engineered features* than the orginal paper by Roald Eiselen. 
 
-**Error Analysis**: I used the FastText Afrikaans pre-trained word embeddings trained on Wikipedia found at:
-https://fasttext.cc/docs/en/pretrained-vectors.html.
-The Fasttext word embedding used in the BiLSTM-CRF is missing 39% of the words use in the NCHLT Afrikaans NER Corpus, leaving a large portion of the words unaccounted for. At the quick glance there seems to be a fair portion of english words that are present in the embedding-less words.
-
+### Error Analysis**: 
+The Fasttext word embedding used in the BiLSTM-CRF is missing 39% of the words use in the NCHLT Afrikaans NER Corpus, leaving a large portion of the words unaccounted for.This is not ideal and i noticed that this is was problem was also due to the inconsistent preparation of the data. Hypenated words such as "Suid-Afrika", should be seperated into 3 seperate tokens. After cleaning up this error, the missing word count dropped to 29%-34% depending on which embedding was used.
