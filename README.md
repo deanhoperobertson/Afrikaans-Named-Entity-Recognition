@@ -13,7 +13,8 @@ The onyl statistcial models currently built on this data was by Roald Eiselen (U
 
 ### Neural Network 
 - BiLSTM-CRF (FastText Wiki 300D 99k) (F1=**64.0**)
-- BiLSTM-CRF (Casing Features + FastText Wiki 300D 800k) (F1=**??**)
+- BiLSTM-CRF (FastText Common 300D 800k) (F1=**??**)
+- BiLSTM-CRF (Casing Features + FastText Wiki 300D) (F1=**??**)
 
 ### Word Embeddings:
 I used the FastText Afrikaans pre-trained word embeddings trained on Wikipedia found at:
